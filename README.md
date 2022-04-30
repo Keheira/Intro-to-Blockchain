@@ -1,31 +1,27 @@
-## Initial Idea
-~Micro-loans~
-~1. users register themselves~
-~2. users can see any open micro loans~
-~3. users "apply" for funds~
-~4. agreement is made~
-~5. transaction happens~
+## Donation Portal
+The donation portal allows people to donated ether to a pooled account. Users can add a comment to the amount they picked. This would be similar to submitting donations on a twitch stream.
 
-I didn't like the complecity around this idea
+### Project link
+[]()
 
-## Final Idea
-small message board. To write a message you have to $1, $5, $10, $15. Similar to needing send bits to chat in a discord chat.
+### Directory Structure
+`contracts` - holds all the contracts in solidity
+`migrations` - Keep track of changes in contracts
+`test` - holds all contract test (written in js)
 
-### Why the change
-I felt like the project idea I had took too much time and was too large of a scope for this course.
+### Ethereum account
+`0xA4f3e66b4C4E2dc334dd1bE5a758aE1e240003A3`
 
-## Things to look out for
-1. Not allow anyone to remove money that isn't the owner
-2. Have a cool down period
+### How to install dependencies
+1. cd into `src/`
+2. run `yarn install`
 
-## Donation object
-```
-Donation {
-    user: address,
-    message: string,
-    amount: uint
-}
-```
+### Run UI locally
+1. cd into `src/donationportal`
+2. run `yarn start`
 
-## Personal Branch
-I made this branch for test projects that aren't related to the course material. I just built them to build them.
+### Run smart contract unit test
+Run `truffle test` from the root
+
+### Screencast
+[]()
